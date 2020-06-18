@@ -1,0 +1,26 @@
+{
+  "name": "Slack 2ch (VIP)",
+  "description": "Slack に VIP チャンネルを作るよ",
+  "repository": "https://github.com/riaf/slack-2ch",
+  "keywords": ["node", "slack", "2ch"],
+  "env": {
+    "SECRET": {
+      "description": "A secret key for id generator.",
+      "generator": "secret"
+    },
+    "SLACK_SIGNING_SECRET": {
+      "description": "[Slack] Signing Secret"
+    },
+    "SLACK_BOT_TOKEN": {
+      "description": "[Slack] Bot OAuth token (xoxb-...)"
+    },
+    "SLACK_CHANNEL": {
+      "description": "[Slack] Channel ID (C...)"
+    },
+    "NODE_ENV": {
+      "description": "Application mode",
+      "value": "production"
+    }
+  },
+  "addons": ["redistogo"]
+}
